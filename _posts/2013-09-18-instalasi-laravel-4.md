@@ -37,7 +37,7 @@ Metode 3: Download laravel dan semua dependensi yang dibutuhkan
 
 Buka terminal, console, atau command prompt, masuk ke webroot folder Anda dan jalankan perintah berikut untuk setup aplikasi Laravel:
 
-<pre class="prettyprint"><code>composer craete-project laravel/laravel sampleApp --prefer-dist</code></pre>
+<pre class="prettyprint"><code>composer create-project laravel/laravel sampleApp --prefer-dist</code></pre>
 
 Composer akan bekerja untuk Anda, mendownload laravel versi terakhir beserta semua library yang dibutuhkan.
 
