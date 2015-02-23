@@ -1,0 +1,19 @@
+# Permalinks
+permalink:        /post/:title
+relative_permalinks: true
+
+# Setup
+title:            id-laravel.com
+tagline:          Laravel Indonesia
+url:              http://id-laravel.com
+paginate:         1
+baseurl:          /
+author:
+  name:           Bayu Hendra Winata
+  url:            https://twitter.com/uyab
+  email:          uyab.exe@gmail.com
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/id-laravel/id-laravel.github.io

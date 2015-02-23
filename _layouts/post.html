@@ -1,0 +1,29 @@
+{% include header.html %}
+
+<div class="container" id="content">
+
+    <section class="post">
+        <h2 class="title">{{ page.title }}</h2>
+        {{ content }}
+    </section>
+
+    <section class="comment">
+        <div class="fb-comments" data-href="{{ post.url }}" data-numposts="10"></div>
+    </section>
+
+</div>
+
+{% include footer.html %}
+
+<script src="{{ site.baseurl }}public/js/jquery-1.10.2.min.js"></script>
+
+<script src="{{ site.baseurl }}public/js/prettify.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('pre > code').parent().addClass('prettyprint');
+        prettyPrint();
+    });
+</script>
+
+</body>
+</html>
