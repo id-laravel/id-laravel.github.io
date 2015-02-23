@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blade Bagian 1: Berkenalan Dengan Template Engine
+title: "Blade Bagian 1: Berkenalan Dengan Template Engine"
 ---
 
 ![German Sword](https://dl.dropboxusercontent.com/u/21271348/id-laravel.com/blade-bagian-1/german-sword.jpg)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Atoz: Base Application Template for Laravel
+title: "Atoz: Base Application Template for Laravel"
 ---
 
 <figure>

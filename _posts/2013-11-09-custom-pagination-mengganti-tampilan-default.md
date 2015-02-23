@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blade Bagian 1: Berkenalan Dengan Template Engine
+title: "Custom Pagination: Mengganti Tampilan Default"
 ---
 
 Edit file app/config/view.php:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Halo Bro: Membuat Halaman Web Pertama Dengan Laravel
+title: "Halo Bro: Membuat Halaman Web Pertama Dengan Laravel"
 ---
 
 Kali ini kita akan bersama-sama membuat halaman web dengan laravel. Karena hello world sudah terlalu mainstream, maka kita akan memodifkasinya sedikit. Ya, kita akan membuat sebuah halaman sederhana, tidak ada fungsi macam-macam selain menampilkan teks
