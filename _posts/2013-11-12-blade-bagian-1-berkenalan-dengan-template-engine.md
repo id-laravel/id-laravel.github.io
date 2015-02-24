@@ -61,24 +61,30 @@ Pengecekan menggunakan `if else`, `looping array` untuk menampilkan data, dan me
 
 #### *Echo variable*
 
+{% raw %}
     Halo bro {{ $name }}
 
     // identik dengan:
     Halo bro <?php echo $name ?>
+{% endraw %}
 
 #### *Echo variable* dengan aman (*escape* html)
 
+{% raw %}
     Halo bro {{{ $name }}}
 
     // identik dengan:
     Halo bro <?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8') ?>
+{% endraw %}
 
 #### *Echo variable* atau *default value* (Laravel versi 4.1)
 
+{% raw %}
     Halo bro {{ $name or 'guest' }}
 
     // identik dengan:
     Halo bro <?php echo isset($name)?$name:'guest' ?>
+{% endraw %}
 
 #### Kondisional
 
@@ -119,8 +125,11 @@ Pengecekan menggunakan `if else`, `looping array` untuk menampilkan data, dan me
 
 #### Komentar
 
+{% raw %}
+
     {{-- Ini komentar, tidak akan ditampilkan --}}
 
+{% endraw %}
 
 ### Cara Kerja Blade
 Untuk bisa menggunakan blade di proyek laravel Anda, hanya ada satu hal yang harus dilakukan. Ganti nama file view Anda, misalnya dari `sample.php` menjadi `sample.blade.php`.
@@ -139,9 +148,13 @@ Untuk lebih jelasnya, mari kita praktekkan saja. Tambahkan router baru seperti b
 
 Lalu buat file `app/views/blade-sample.blade.php`:
 
+{% raw %}
+
     @foreach(array(1,2,3) as $i)
     {{ $i }}
     @endforeach
+
+{% endraw %}
 
 Lihat hasilnya di browser. Tampak tulisan '123'. Selanjutnya buka folder `app/storage/views`, dan Anda akan menemukan file dengan nama yang aneh semisal `d9c6e88599f63fd69746818d3514ff5d`. Jika Anda buka, isinya adalah seperti ini:
 

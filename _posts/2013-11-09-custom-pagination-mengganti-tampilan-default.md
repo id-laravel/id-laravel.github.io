@@ -27,6 +27,8 @@ Jika Anda ternyata cukup berani membuat tampilan paginasi sesuai selera sendiri,
 
 Sebagai contohnya, misalnya jadi seperti ini:
 
+{% raw %}
+
     <?php
         $presenter = new Illuminate\Pagination\BootstrapPresenter($paginator);
 
@@ -45,6 +47,8 @@ Sebagai contohnya, misalnya jadi seperti ini:
         <span class="btn">{{ $paginator->getCurrentPage() }} / {{ $paginator->getLastPage() }}</span>
         <a href="{{ $nextUrl }}" class="btn"><i class="icon icon-chevron-right"></i></a>
     </div>
+    
+{% endraw %}
 
 Beberapa fungsi yang dimiliki object `$paginator` yang mungkin berguna untuk membuat style paginasi sesuai selera Anda antara lain:
 
