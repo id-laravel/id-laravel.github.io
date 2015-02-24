@@ -8,7 +8,14 @@
     </section>
 
     <section class="comment">
+
+
+        {% capture year %}{{page.date | date: "%Y"}}{% endcapture %}
+        {% if year <= "2014" %}
         <div class="fb-comments" data-href="{{ site.url}}{{ page.url }}" data-numposts="10"></div>
+        {% else %}
+        {% include disqus.html url=page.url %}
+        {% endif %}
     </section>
 
 </div>
