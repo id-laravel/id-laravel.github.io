@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 // translate less file, then minify it
 gulp.task('less', function () {
-    gulp.src('assets/less/app/app.less')
+    gulp.src('_assets/less/app/app.less')
         .pipe(less())
         .pipe(gulp.dest('public/css/'))
         .pipe(minifyCSS())
@@ -19,8 +19,8 @@ gulp.task('less', function () {
 
 gulp.task('watch-less', function () {
     gulp.watch([
-        'assets/less/app/*',
-        'assets/less/app/*/*',
+        '_assets/less/app/*',
+        '_assets/less/app/*/*',
     ], ['less']);
 
     livereload.listen();

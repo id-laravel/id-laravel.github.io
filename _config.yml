@@ -13,6 +13,9 @@ author:
   url:            https://twitter.com/uyab
   email:          uyab.exe@gmail.com
 
+# Build options
+exclude:          [node_modules]
+
 # Custom vars
 version:          1.0.0
 github:
