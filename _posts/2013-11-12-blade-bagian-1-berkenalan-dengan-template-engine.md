@@ -46,6 +46,8 @@ Singkatnya, **blade** adalah template engine bawaan Laravel. Blade menawarkan sy
 
 Masih memakai contoh kode di atas, jika ditulis ulang menggunakan blade akan menjadi seperti ini:
 
+{% raw %}
+
     ...
     <ul>
         @foreach($posts as $post)
@@ -53,6 +55,8 @@ Masih memakai contoh kode di atas, jika ditulis ulang menggunakan blade akan men
         @endforeach
     </ul>
     ...
+
+{% endraw %}
 
 Jauh lebih singkat dan lebih enak dibaca kan? Tapi yang pasti Anda akan cukup kagok menulisnya. Tapi tenang, itu cuma karena belum terbiasa saja dengan 'keindahan' laravel blade :)
 
@@ -104,6 +108,8 @@ Pengecekan menggunakan `if else`, `looping array` untuk menampilkan data, dan me
 
 #### Iterasi
 
+{% raw %}
+
     @for ($i = 0; $i < 10; $i++)
         <span>nilai i = {{ $i }}<span>
     @endfor
@@ -115,6 +121,8 @@ Pengecekan menggunakan `if else`, `looping array` untuk menampilkan data, dan me
     @while (true)
         <p>Forever alone... eh, forever looping</p>
     @endwhile
+
+{% endraw %}
 
 #### Include sub-view
 

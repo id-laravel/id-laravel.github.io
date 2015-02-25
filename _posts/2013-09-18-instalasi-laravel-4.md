@@ -16,12 +16,8 @@ Seperti yang sudah pernah saya jelaskan [dalam tulisan lainnya](http://id-larave
 Pengguna Windows bisa langsung download [Composer Installer](http://getcomposer.org/Composer-Setup.exe), jalankan proses instalasi, done.
 
 Bagi penggunal Linux dan Mac bisa menjalankan perintah berikut:
-<pre class="prettyprint"><code>
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-
-</code>
-</pre>
+<p><code>curl -sS https://getcomposer.org/installer | php</code></p>
+<p><code>mv composer.phar /usr/local/bin/composer</code></p>
 
 Untuk mengetes apakah instalasi berhasil, ketikkan perintah <code>composer</code> di terminal/console/command prompt Anda.
 
@@ -37,7 +33,7 @@ Metode 3: Download laravel dan semua dependensi yang dibutuhkan
 
 Buka terminal, console, atau command prompt, masuk ke webroot folder Anda dan jalankan perintah berikut untuk setup aplikasi Laravel:
 
-<pre class="prettyprint"><code>composer create-project laravel/laravel sampleApp --prefer-dist</code></pre>
+<code>composer create-project laravel/laravel sampleApp --prefer-dist</code>
 
 Composer akan bekerja untuk Anda, mendownload laravel versi terakhir beserta semua library yang dibutuhkan.
 
@@ -52,11 +48,11 @@ Jika sudah selesai, buka http://localhost/sampleApp/public, apa yang Anda lihat?
 
 Download [laravel versi terbaru langsung dari github](http://github.com/laravel/laravel/archive/master.zip). Ekstrak file zip tersebut ke dalam folder sampleApp di webroot Anda. Selanjutnya buka terminal/console/command prompt, masuk ke folder tersebut dan jalankan perintah:
 
-<pre class="prettyprint"><code>php composer.phar install</code></pre>
+<code>php composer.phar install</code>
 
 atau
 
-<pre class="prettyprint"><code>composer install</code></pre>
+<code>composer install</code>
 
 Tunggu sampai Composer selesai bekerja, lalu buka http://localhost/sampleApp/public, apa yang Anda lihat?
 

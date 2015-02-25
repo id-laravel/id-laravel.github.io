@@ -4,14 +4,14 @@ title: Yang Baru di Laravel Indonesia
 ---
 
 <div class="container" id="page-home">
-    <div class="col-md-9 col-sm-12">
+    <div class="col-md-8 col-sm-12">
         {% for post in site.posts %}
         <div class="item row">
             <div class="col-md-9 col-sm-12">
                 <a href="{{ post.url }}">{{ post.title }}</a>
             </div>
 
-            <div class="col-md-3 hidden-xs hidden-sm">
+            <div class="col-md-3 hidden-xs hidden-sm text-right">
                 <small class="date text-muted">
                     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">
                     {{ post.date | date_to_string }}
@@ -21,7 +21,7 @@ title: Yang Baru di Laravel Indonesia
         </div>
         {% endfor %}
     </div>
-    <div class="col-md-3 hidden-sm hidden-xs">
+    <div class="col-md-4 hidden-sm hidden-xs">
         <div class="well well-lg text-center">
             <p class="lead">
                 Good programmer write code for machine, <b>great programmer write code for other programmer</b>.
