@@ -1,23 +1,24 @@
 {% include header.html %}
 
-<div class="container" id="content">
+<div class="container" id="page-post">
 
-    <section class="post">
-        <h2 class="title">{{ page.title }}</h2>
-        {{ content }}
-    </section>
+    <div class="col-md-9">
+        <section class="post">
+            <h2 class="title">{{ page.title }}</h2>
+            {{ content }}
+        </section>
 
-    <section class="comment">
+        <section class="comment">
+            {% capture year %}{{page.date | date: "%Y"}}{% endcapture %}
+            {% if year <= "2014" %}
+            <div class="fb-comments" data-href="{{ site.url}}{{ page.url }}" data-numposts="10"></div>
+            {% else %}
+            {% include disqus.html url=page.url %}
+            {% endif %}
+        </section>
 
-
-        {% capture year %}{{page.date | date: "%Y"}}{% endcapture %}
-        {% if year <= "2014" %}
-        <div class="fb-comments" data-href="{{ site.url}}{{ page.url }}" data-numposts="10"></div>
-        {% else %}
-        {% include disqus.html url=page.url %}
-        {% endif %}
-    </section>
-
+    </div>
+    <div class="col-md-3"></div>
 </div>
 
 {% include footer.html %}
