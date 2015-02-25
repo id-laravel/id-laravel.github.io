@@ -3712,11 +3712,14 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-color: #f0523f;
 }
 #navbar-header .title {
-  color: #fff;
   line-height: 2.25em;
   text-transform: uppercase;
   font-size: 1.5em;
   font-weight: 300;
+}
+#navbar-header .title a {
+  color: #fff;
+  text-decoration: none;
 }
 footer {
   border-top: 1px solid #eeeeee;
