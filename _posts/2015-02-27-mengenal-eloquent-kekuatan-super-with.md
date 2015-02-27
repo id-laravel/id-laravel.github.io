@@ -217,7 +217,7 @@ Yup, kita berhasil memangkas jumlah query dari 31 menjadi hanya 4.
 
 ### Global `with`
 
-Jika Anda merasa kode `nested with` diatas 'ga banget', kita bisa menggantinya dengan menambahkan variable `$with` ke masing-masing model.
+Jika Anda tidak mau berulang-ulang menambahkan `with` di setiap query, kita bisa menggantinya dengan menambahkan variable `$with` ke masing-masing model.
 
 Contoh untuk model `Desa` bisa kita tambahkan:
 
@@ -233,9 +233,9 @@ Cek query yang ditampilkan di debugbar, bagaimana hasilnya?
 
 ### P.S.
 
-Konsep diatas biasa dikenal dengan istilah `lazy loading` dan `eager loading`. Pada contoh pertama yang menghasilkan 31 query, Laravel menerapkan prinsip `lazy loading`: query dilakukan hanya jika dibutuhkan. Ketika di view kita memanggil `$item->kecamatan` maka pada saat itulah Eloquent melakukan query untuk mendapatkan data kecamatan terkait. Anda bisa melakukan eksperimen, misalnya dengan tidak menampilkan nama provinsi dan kabupaten, lalu cek query yang dihasilkan. Atau Anda bisa mengosongkan view (jadi tidak melakukan looping dan tidak menampilkan data apapun), maka Eloquent cuma akan melakukan satu kali query.
+Konsep diatas biasa dikenal dengan istilah `lazy loading` dan [eager loading](http://laravel.com/docs/5.0/eloquent#eager-loading). Pada contoh pertama yang menghasilkan 31 query, Laravel menerapkan prinsip `lazy loading`: query dilakukan hanya jika dibutuhkan. Ketika di view kita memanggil `$item->kecamatan` maka pada saat itulah Eloquent melakukan query untuk mendapatkan data kecamatan terkait. Anda bisa melakukan eksperimen, misalnya dengan tidak menampilkan nama provinsi dan kabupaten, lalu cek query yang dihasilkan. Atau Anda bisa mengosongkan view (jadi tidak melakukan looping dan tidak menampilkan data apapun), maka Eloquent cuma akan melakukan satu kali query.
 
-Sebaliknya, dengan memanggil `with`, Anda meminta Eloquent untuk melakukan `eager loading`: lakukan semua query yang dibutuhkan, termasuk query untuk mengambil data terkait. Pada contoh ketiga (dengan nested with), meskipun view dikosongkan, query yang dihasilkan tetap sama, yaitu 4. Hal ini karena Eloquent sudah mengambil semua data di awal (eager), tidak peduli apakah data itu akan digunakan atau tidak.
+Sebaliknya, dengan memanggil `with`, Anda meminta Eloquent untuk melakukan [eager loading](http://laravel.com/docs/5.0/eloquent#eager-loading): lakukan semua query yang dibutuhkan, termasuk query untuk mengambil data terkait. Pada contoh ketiga (dengan nested with), meskipun view dikosongkan, query yang dihasilkan tetap sama, yaitu 4. Hal ini karena Eloquent sudah mengambil semua data di awal (eager), tidak peduli apakah data itu akan digunakan atau tidak.
 
 Fitur eager loading dengan with ini bisa digunakan untuk semua jenis relasi. Gunakan insting programmer Anda memutuskan kapan harus menggunakannya. Penggunaan `with` secara tepat bisa meningkatkan kecepatan aplikasi sekaligus menghindari penggunaan `join table` secara manual menggunakan `fluent query builder`.
 
