@@ -183,7 +183,7 @@ Query yang dihasilkan:
 
 Yihaaa, jumlah query lumayan berkurang. Jika kita bisa menambahkan `->with('kecamatan')` maka kok rasa-rasanya kita juga bisa melakukan hal yang sama untuk kabupaten dan provinsi. Mari kita coba:
 
-    $desa = \App\Desa::where('nama', 'like', '%sukamakmur%')->with(['kecamatan', 'kabupaten', 'provinsi'])->get();
+    $desa = \App\Desa::where('nama', 'like', '%sukamakmur%')->with('kecamatan', 'kabupaten', 'provinsi')->get();
     
 Tetooot... wrong answer.
 
@@ -203,6 +203,13 @@ Kita tidak bisa menggunakan kode diatas karena `Desa` tidak memiliki relasi lang
         ->get();
 
 Saya agak kesusahan menjelaskan kode diatas, jadi semoga Anda bisa memahaminya sendiri. Lalu, bagaimana hasil querynya?
+
+#### Update
+Kita bisa melakukan nested with dengan cara yang lebih simpel dengan menggunakan notasi *dot*:
+
+    $desa = \App\Desa::where('nama', 'like', '%sukamakmur%')->with('kecamatan.kabupaten.provinsi')->get();
+
+Dua buah kode terakhir sama-sama menghasilkan query seperti berikut:
 
 ![image](https://dl.dropboxusercontent.com/u/21271348/id-laravel.com/sukamakmur-debugbar-nested-with.png.png)
 
