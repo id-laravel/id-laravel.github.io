@@ -8,6 +8,10 @@
             {{ content }}
         </section>
 
+        <section class="share">
+            {% include share.html url=page.url title=page.title %}
+        </section>
+
         <section class="comment">
             {% capture year %}{{page.date | date: "%Y"}}{% endcapture %}
             {% if year <= "2014" %}
@@ -23,7 +27,7 @@
 {% include footer.html %}
 
 <script src="{{ site.baseurl }}public/js/jquery-1.10.2.min.js"></script>
-
+<script src="//oss.maxcdn.com/rrssb/1.6.0/js/rrssb.min.js"></script>
 <script src="{{ site.baseurl }}public/js/prettify.js"></script>
 <script type="text/javascript">
     $(function(){
