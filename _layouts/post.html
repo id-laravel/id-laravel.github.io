@@ -2,25 +2,30 @@
 
 <div class="container" id="page-post">
 
-    <div class="col-md-8">
-        <section class="post">
-            <h1 class="title">{{ page.title }}</h1>
-            {{ content }}
-        </section>
+    <div class="row">
+        <div class="col-md-8">
+            <section class="post">
+                <h1 class="title">{{ page.title }}</h1>
+                {{ content }}
+            </section>
 
-        <section class="share">
-            {% include share.html url=page.url title=page.title %}
-        </section>
+            <section class="share">
+                {% include share.html url=page.url title=page.title %}
+            </section>
+        </div>
+    </div>
 
-        <section class="comment">
-            {% capture year %}{{page.date | date: "%Y"}}{% endcapture %}
-            {% if year <= "2014" %}
-            <div class="fb-comments" data-href="{{ site.url}}{{ page.url }}" data-numposts="10"></div>
-            {% else %}
-            {% include disqus.html url=page.url %}
-            {% endif %}
-        </section>
-
+    <div class="row">
+        <div class="col-md-6">
+            <section class="comment">
+                <div class="fb-comments" data-href="{{ site.url}}{{ page.url }}" data-numposts="10"></div>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <section class="comment">
+                {% include disqus.html url=page.url %}
+            </section>
+        </div>
     </div>
 </div>
 
