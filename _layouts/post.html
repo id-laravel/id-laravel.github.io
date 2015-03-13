@@ -2,35 +2,37 @@
 
 <div class="container" id="page-post">
 
-    <div class="row">
-        <div class="col-md-8">
-            <section class="post">
-                <h1 class="title">{{ page.title }}</h1>
-                {{ content }}
-            </section>
+    <div class="section-content">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <section class="post">
+                    <h1 class="title">{{ page.title }}</h1>
+                    {{ content }}
+                </section>
 
-            <section class="share">
-                {% include share.html url=page.url title=page.title %}
-            </section>
-        </div>
+                <section class="share">
+                    {% include share.html url=page.url title=page.title %}
+                </section>
 
-        <div class="col-md-4">
-            {% include related.html %}
+                {% include related.html %}
+
+            </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-6">
-            <section class="comment">
-                <div class="fb-comments" data-href="{{ site.url}}{{ page.url }}" data-numposts="10"></div>
-            </section>
-        </div>
-        <div class="col-md-6">
-            <section class="comment">
-                {% include disqus.html url=page.url %}
-            </section>
+    <div class="section-comment">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <section class="comment">
+                    <div class="fb-comments" data-href="{{ site.url}}{{ page.url }}" data-numposts="10" data-width="100%"></div>
+                </section>
+                <section class="comment">
+                    {% include disqus.html url=page.url %}
+                </section>
+            </div>
         </div>
     </div>
+
 </div>
 
 {% include footer.html %}

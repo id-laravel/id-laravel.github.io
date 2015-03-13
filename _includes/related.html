@@ -3,18 +3,20 @@
 {% assign postHasSimilar = false %}
 {% for tag in post.tags %}
 {% for thisTag in page.tags %}
-{% if postHasSimilar == false and hasSimilar.size < 6 and post != page and tag == thisTag %}
+{% if postHasSimilar == false and hasSimilar.size <=1  and post != page and tag == thisTag %}
 {% if hasSimilar.size == 0 %}
-<h3>Artikel Terkait</h3>
+<div class="related-post">
+
+<h3 class="subtitle">Baca Juga</h3>
 <div class="box">
     {% endif %}
-        <div class="well">
+        <h2 class="title">
             <a href="{{ site.url }}{{ post.url }}">{{ post.title }}
                 {% if post.series %}
                 (Series: {{ post.series }})
                 {% endif %}
             </a>
-        </div>
+        </h2>
     {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
     {% assign postHasSimilar = true %}
     {% endif %}
@@ -23,4 +25,6 @@
     {% endfor %}
     {% if hasSimilar.size > 0 %}
 </div>
+</div>
+
 {% endif %}

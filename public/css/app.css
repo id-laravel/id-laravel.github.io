@@ -4526,8 +4526,19 @@ p > code {
   padding: 10px 0;
   border-bottom: 1px dashed #eeeeee;
 }
+#page-post .section-content {
+  margin-bottom: 40px;
+}
+#page-post .section-comment .comment {
+  margin-bottom: 20px;
+}
 #page-post .post {
   margin-bottom: 50px;
+}
+#page-post .post .title {
+  line-height: 1.25em;
+  font-weight: 300;
+  padding-bottom: 30px;
 }
 #page-post .post h2 {
   margin: 40px 0 20px;
@@ -4538,8 +4549,28 @@ p > code {
 #page-post .post h4 {
   margin: 20px 0 10px;
 }
-#page-post .share {
-  margin-bottom: 50px;
+#page-post .post img {
+  max-width: 100%;
+  height: auto;
+}
+#page-post .post .share {
+  margin-top: 40px;
+}
+#page-post .related-post {
+  margin-top: 40px;
+  border: 1px dashed #eeeeee;
+  padding: 20px 40px;
+  text-align: center;
+}
+#page-post .related-post .title,
+#page-post .related-post .subtitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
 }
 p {
   line-height: 24.75px;

@@ -1,12 +1,45 @@
 #page-post {
+
+  .section-content {
+    margin-bottom: 40px;
+  }
+
+  .section-comment {
+    .comment {
+      margin-bottom: 20px;
+    }
+  }
+
   .post {
     margin-bottom: 50px;
+    .title {
+      line-height: 1.25em;
+      font-weight: 300;
+      padding-bottom: 30px;
+    }
 
     h2 {margin: 40px 0 20px}
     h3 { margin: 30px 0 20px}
     h4 { margin: 20px 0 10px}
+    img {
+      max-width: 100%; // Part 1: Set a maximum relative to the parent
+      height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+    }
+
+    .share {
+      margin-top: 40px;
+    }
   }
-  .share {
-    margin-bottom: 50px;
+  .related-post {
+    margin-top: 40px;
+    border: 1px dashed @gray-lighter;
+    padding: 20px 40px;
+    text-align: center;
+
+    .title, .subtitle {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-weight: 300;
+    }
   }
 }
