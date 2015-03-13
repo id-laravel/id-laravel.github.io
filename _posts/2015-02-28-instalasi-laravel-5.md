@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Instalasi Laravel 5
+tags: [laravel, install]
 ---
 
 > Saya rekomendasikan Anda untuk menginstall [composer](https://getcomposer.org/) terlebih dahulu. Atau Anda bisa membaca kembali postingan terdahulu tentang [cara install composer](http://id-laravel.com/post/instalasi-laravel-4/) di website ini.

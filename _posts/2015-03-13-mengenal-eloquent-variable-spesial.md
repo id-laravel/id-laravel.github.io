@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mengenal Eloquent: Variable-Variable Spesial"
+tags: [eloquent, model]
 ---
 
 Untuk pembahasan kali ini, kita akan menggunakan contoh data dan struktur model pada [artikel sebelumnya tentang pembagian wilayah di Indonesia](http://id-laravel.com/post/mengenal-eloquent-kekuatan-super-with).

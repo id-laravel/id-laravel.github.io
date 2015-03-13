@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Instalasi Laravel 4
+tags: [laravel, install]
 ---
 
 Tidak seperti framework PHP kebanyakan, dimana Anda bisa download satu set folder, taruh di web server, dan aplikasi siap dijalankan, Laravel sedikit berbeda dalam hal instalasi. Laravel memiliki dependensi (ketergantungan) terhadap beberapa library PHP lainnya, dimana library tersebut tidak disertakan dalam [source laravel yang tersedia untuk didownload](https://github.com/laravel/laravel). Oleh karena itu Anda haru mendownload library yang dibutuhkan tersebut secara terpisah.

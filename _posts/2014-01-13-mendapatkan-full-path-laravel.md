@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mendapatkan full path laravel
+tags: [helper, path]
 ---
 
 Laravel sudah menyediakan empat buah fungsi yang bisa Anda gunakan untuk mendapatkan full path folder aplikasi:

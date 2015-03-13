@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mengenal Eloquent: Kekuatan Super `with`"
+tags: [eloquent, model]
 ---
 
 > Saya asumsikan Anda sudah sudah pernah menggunakan Eloquent ORM bawaan Laravel dan sudah tahu apa itu relationship semisal belongsTo, hasOne, hasMany, dan lain sebagainya.

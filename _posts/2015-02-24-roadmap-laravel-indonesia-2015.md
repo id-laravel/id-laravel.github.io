@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Roadmap Laravel Indonesia Tahun 2015
+tags: [id-laravel]
 ---
 
 * Migrasi dari [wardrobecms](http://wardrobecms.com/) ke [Jekyll](http://jekyllrb.com/) + Github a.k.a [Github Pages](https://pages.github.com/) (done)

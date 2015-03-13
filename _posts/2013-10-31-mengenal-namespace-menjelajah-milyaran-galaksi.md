@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mengenal Namespace: Menjelajah Milyaran Galaksi"
+tags: [namespace]
 ---
 
 ![The Milky Way](https://dl.dropboxusercontent.com/u/21271348/id-laravel.com/namespace/milky-way.jpg)

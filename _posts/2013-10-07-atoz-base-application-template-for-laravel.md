@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Atoz: Base Application Template for Laravel"
+tags: [showcase]
 ---
 
 <figure>

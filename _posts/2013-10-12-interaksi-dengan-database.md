@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Interaksi Dengan Database
+tags: [eloquent, database, model]
 ---
 
 Pada [tulisan sebelumnya](http://id-laravel.com/post/halo-bro-membuat-halaman-web-pertama-dengan-laravel) kita sudah bersama-sama membuat halaman web pertama

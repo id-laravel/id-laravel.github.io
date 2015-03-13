@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Menangani Error 404
+tags: [error]
 ---
 
     // file app/routes.php:

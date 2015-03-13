@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Membuat Form Registrasi Dengan Laravel
+tags: [form, validasi, view]
 ---
 
 Salah satu prinsip ketika membuat aplikasi adalah: **mulailah dengan tampilan**.

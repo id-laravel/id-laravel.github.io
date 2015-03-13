@@ -1,6 +1,7 @@
 ---
 title: Kenapa memilih Laravel?
 layout: post
+tags: [laravel]
 ---
 
 Woohoo… framework baru lagi? Mungkin pertanyaan Anda sama dengan saya, sudah ada cukup banyak framework PHP di dunia ini, mulai dari yang ringan dan mudah dipelajari seperti [CodeIgniter](http://codeigniter.com), yang terlalu kompleks dan enterprise seperti [Zend Framework](http://framework.zend.com), yang bisa simsalabim bikin prototype CRUD dalam hitungan detik semacam [CakePHP](http://cakephp.org),  hingga yang lebih robust seperti [Yii Framework](http://yiiframework.com).

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Custom Pagination: Mengganti Tampilan Default"
+tags: [paginasi]
 ---
 
 Edit file app/config/view.php:

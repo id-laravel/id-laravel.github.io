@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Package Pilihan Minggu Ini #1"
+tags: [package]
 ---
 
 > Tema minggu ini adalah package yang digunakan unuk mempercepat workflow pengembangan aplikasi. Package yang disebutkan di bawah ini, meskipun tidak secara langsung menambah fitur aplikasi, tetapi berguna bagi developer selama masa pengembangan.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Menghilangkan folder public di URL pada aplikasi Laravel
+tags: [tips, url]
 ---
 
 ![image](https://dl.dropboxusercontent.com/u/21271348/id-laravel.com/public-removal/rajaampat.png)
