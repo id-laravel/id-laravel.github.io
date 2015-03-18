@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Package Pilihan Minggu Ini #1"
+title: "Package Pilihan Minggu Ini #1: Workflow"
 tags: [package]
 ---
 
