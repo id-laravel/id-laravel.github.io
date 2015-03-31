@@ -1,17 +1,27 @@
 #navbar-header {
-  height: 80px;
-  background-color: @brand-primary;
-  border-color: @brand-primary;
+  height: 120px;
+  background-color: #fff;
+  border-color: transparent;
+  border-top: 0 none;
+  border-bottom: 1px solid @gray-lighter;
 
   .title{
-    line-height: 2.25em;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    font-weight: 300;
-
+//    text-transform: uppercase;
+    font-size: 1.75em;
+    font-weight: 700;
+    line-height: 3em;
     a {
-      color: #fff;
+      color: @gray-dark;
       text-decoration: none;
     }
+  }
+  .navbar-brand {
+    background-color: @brand-primary;
+    display: none;
+    height: 100px;
+    .logo {
+      margin-top: 18px;
+    }
+
   }
 }
