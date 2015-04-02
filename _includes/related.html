@@ -5,8 +5,8 @@
 {% for thisTag in page.tags %}
 {% if postHasSimilar == false and hasSimilar.size <=1  and post != page and tag == thisTag %}
 {% if hasSimilar.size == 0 %}
-<div class="related-post">
-
+<div class="related-post panel panel-default">
+<div class="panel-body">
 <h3 class="subtitle">Baca Juga</h3>
 <div class="box">
     {% endif %}
@@ -25,6 +25,10 @@
     {% endfor %}
     {% if hasSimilar.size > 0 %}
 </div>
+</div>
+    <div class="panel-footer text-center">
+        <small class="text-muted">atau</small> <a href="{{ site.baseurl }}">lihat tutorial menarik lainnya <i class="fa fa-long-arrow-right"></i></a>
+    </div>
 </div>
 
 {% endif %}
