@@ -1,11 +1,33 @@
 footer {
   border-top: 1px solid @gray-lighter;
+  background-color: lighten(@gray-lighter, 5%);
   padding: 40px 0;
   margin-top: 80px;
+  color: @gray-light;
 
-  .copyright {
-    color: @gray-light;
+  .title {
     font-weight: 700;
+    margin-bottom: 5px;
+  }
 
+  hr {
+    border-color: @gray-lighter;
+  }
+
+  .social-link {
+    a {
+      color: @gray-light;
+      padding: 0 5px;
+
+      &:hover {
+        color: @brand-primary;
+      }
+    }
+  }
+  @media (max-width: @screen-sm-max) {
+    text-align: center;
+    .column {
+      margin-bottom: 20px;
+    }
   }
 }

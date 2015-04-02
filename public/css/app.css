@@ -4087,12 +4087,32 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 footer {
   border-top: 1px solid #eeeeee;
+  background-color: #fbfbfb;
   padding: 40px 0;
   margin-top: 80px;
-}
-footer .copyright {
   color: #777777;
+}
+footer .title {
   font-weight: 700;
+  margin-bottom: 5px;
+}
+footer hr {
+  border-color: #eeeeee;
+}
+footer .social-link a {
+  color: #777777;
+  padding: 0 5px;
+}
+footer .social-link a:hover {
+  color: #f0523f;
+}
+@media (max-width: 991px) {
+  footer {
+    text-align: center;
+  }
+  footer .column {
+    margin-bottom: 20px;
+  }
 }
 .well {
   -webkit-box-shadow: 0 none;
