@@ -45,19 +45,19 @@ Kira-kira seperti inilah penampakan 'catatan harian' sql yang ditulis duo progra
 
 ![image](/images/changelog-sql.png)
 
-Di akhir bulan keempat berikutnya, tibalah saatnya untuk update aplikasi ke server *production*. Kali ini mereka berdua dengen percaya diri menyerahkan 'catatan harian' sql mereka ke admin server untuk dijalankan. Beres, kali ini mereka berdua bisa pulang bahkan sebelum matahari terbenam.
+Di akhir bulan keempat berikutnya, tibalah saatnya untuk update aplikasi ke server *production*. Kali ini mereka berdua dengen percaya diri menyerahkan 'catatan harian' sql mereka ke admin server untuk dijalankan. Beres, kali ini Jon dan Dodo bisa pulang bahkan sebelum matahari terbenam.
 
 ### Manusia Tempatnya Lupa
 
 Sudah 2 dari 6 tahapan berhasil dikerjakan. Di tahap berikutnya, mereka koding seperti biasanya, ditambah dengan aktivitas rutin menulis 'catatan harian' di `changelog.sql` jika ada perubahan database. Hingga waktunya tiba, untuk yang kesekian kalinya, mereka harus meng-*update* aplikasi di server *production*. 
 
-Kesuksesan *deployment* di tahapan berikutnya menjadikan Jon dan Dodo semakin percaya diri. Setelah meng-upload kode, mereka menyerahkan kembali 'catatan harian' sql, yang panjangnya sudah 2 kali lipat sejak terakhir kali mereka kesini, untuk dijalankan di server, ketika tiba-tiba mereka teringat (atau lebih tepatnya melupakan) sesuatu: **query-nya harus dijalankan dari mulai line berapa ya**? Menjalankan semua `query` dari awal jelas akan menimbulkan banyak *error*, misalnya terkait `Duplicate column name`.
+Kesuksesan *deployment* di tahapan sebelumnya menjadikan Jon dan Dodo semakin percaya diri. Setelah meng-upload kode, mereka menyerahkan kembali 'catatan harian' sql, yang panjangnya sudah 2 kali lipat sejak terakhir kali mereka kesini, untuk dijalankan di server, ketika tiba-tiba mereka teringat (atau lebih tepatnya melupakan) sesuatu: **query-nya harus dijalankan dari mulai line berapa ya**? Menjalankan semua `query` dari awal jelas akan menimbulkan banyak *error*, misalnya terkait `Duplicate column name`.
 
 Ayam jantan sudah berkokok ketika mereka berdua akhirnya bisa menyelesaikan persoalan tersebut. 
 
-## Sinkronisasi Otomatis
+## Sinkronisasi Terorganisir
 
-Belajar dari kesalahan sebelumnya, sekarang Jon dan Dodo sepakat untuk membuat satu  'catatan harian' baru setiap harinya dan diberi nama sesuai tanggal hari tersebut. Jadilah ada file `changelog-01012015.sql` (untuk tanggal 1 Januari 2015), `changelog-02012015.sql` (tanggal 2 Januari 2015) dan seterusnya. Jika nanti tiba saatnya untuk meng-update aplikasi ke server, mereka tinggal mencari file-file dengan nama tanggal setelah tanggal update terakhir. Sekarang mereka hanya perlu mengingat satu buah tanggal, yaitu tanggal *deployment* ke server yang terakhir kalinya. Jika terakhir kali update ke server dilakukan tanggal 24 Desember 2014, maka di update berikutnya mereka tinggal mencari file `changelog-2512204.sql`, `changelog-2612204.sql` dan seterusnya.
+Belajar dari kesalahan sebelumnya, sekarang Jon dan Dodo sepakat untuk membuat satu  'catatan harian' baru setiap harinya dan diberi nama sesuai tanggal hari tersebut. Jadilah ada file `changelog-01012015.sql` (untuk tanggal 1 Januari 2015), `changelog-02012015.sql` (tanggal 2 Januari 2015) dan seterusnya. Jika nanti tiba saatnya untuk meng-update aplikasi ke server, mereka tinggal mencari file-file dengan nama tanggal setelah tanggal update terakhir. Sekarang mereka hanya perlu mengingat satu buah tanggal, yaitu tanggal *deployment* ke server yang terakhir kalinya. Jika terakhir kali update ke server dilakukan tanggal 24 Desember 2014, maka di update berikutnya mereka tinggal mencari file `changelog-25122014.sql`, `changelog-26122014.sql` dan seterusnya.
 
 ## Epilog
 

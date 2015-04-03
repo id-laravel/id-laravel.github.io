@@ -4577,6 +4577,8 @@ p > code {
 }
 #page-post .post h4 {
   margin: 20px 0 10px;
+  color: #777777;
+  font-weight: 300;
 }
 #page-post .post img {
   max-width: 100%;
