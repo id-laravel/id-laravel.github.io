@@ -18,7 +18,7 @@ Kolom password digunakan baik ketika registrasi ataupun login. Oleh karena itu, 
 
 ### Registrasi
 
-#### Langkah 1. Mengubah `View`
+#### Langkah 1. Ubah `View`
 
 Buka file `resources/views/auth/register.blade.php`. Disitu terdapat dua buah tag `input`, yaitu untuk password dan password_confirmasion. Ubah atribut `name` masing-masing menjadi "sandi" dan "sandi_confirmation":
 
@@ -41,7 +41,7 @@ Buka file `resources/views/auth/register.blade.php`. Disitu terdapat dua buah ta
 	...
 
 
-#### Langkah 2. Mengubah `Service Registrar`
+#### Langkah 2. Ubah `Service Registrar`
 
 Buka file `app/Services/Registrar.php`, disitu bisa kita dapati "password" tertulis di dua tempat. Ganti dua-duanya dengan "sandi".
 
@@ -88,7 +88,7 @@ Buka file `app/Services/Registrar.php`, disitu bisa kita dapati "password" tertu
 	
 	}
 
-#### Langkah 3. Mengubah Model `User`
+#### Langkah 3. Ubah Model `User`
 
 Buka file `app/User.php`, lakukan perubahan di bagian `$fillable`, ganti "password" menjadi "sandi":
 
@@ -99,7 +99,7 @@ Selesai, Anda bisa mencoba kembali proses registrasi bawaan Laravel dan membukti
 
 ### Login
 	
-#### Langkah 1. Mengubah Model `User`
+#### Langkah 1. Ubah Model `User`
 
 Buka kembali file `app/User.php`, tambahkan (atau lebih tepatnya override) fungsi `getAuthPassword`:
 
