@@ -4170,14 +4170,19 @@ code {
 .prettyprint .fun {
   color: #ff0000;
 }
+h2 > code,
+h3 > code,
+h4 > code,
+h5 > code,
+h6 > code,
 p > code {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
-  background: #eee;
+  background: #f8f8f8;
   font-size: .8em;
   padding: 2px 4px;
   display: inline-block;
   border-radius: 2px;
-  border: 1px solid #ddd;
+  border: 1px solid #f0f0f0;
 }
 .rrssb-buttons.large-format li a,
 .rrssb-buttons.large-format li a .rrssb-text {
