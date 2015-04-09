@@ -4068,22 +4068,36 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-top: 0 none;
   border-bottom: 1px solid #eeeeee;
 }
-#navbar-header .title {
-  font-size: 1.75em;
+#navbar-header .navbar-brand.title {
+  font-size: 2em;
   font-weight: 700;
-  line-height: 3em;
+  line-height: 90px;
+  text-transform: uppercase;
 }
-#navbar-header .title a {
+#navbar-header .navbar-brand.title .primary {
+  color: #f0523f;
+}
+#navbar-header .navbar-brand.title .secondary {
+  font-weight: 300;
   color: #333333;
-  text-decoration: none;
 }
-#navbar-header .navbar-brand {
-  background-color: #f0523f;
-  display: none;
-  height: 100px;
+#navbar-header .navbar-brand.title:hover {
+  color: #f0523f;
 }
-#navbar-header .navbar-brand .logo {
-  margin-top: 18px;
+#navbar-header .tagline {
+  line-height: 120px;
+  margin-left: 20px;
+  font-weight: 300;
+  color: #777777;
+}
+#navbar-header .nav-main li a {
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 90px;
+  color: #333333;
+}
+#navbar-header .nav-main li a:hover {
+  color: #f0523f;
 }
 footer {
   border-top: 1px solid #eeeeee;
@@ -4558,9 +4572,16 @@ p > code {
 .rrssb-buttons.tiny-format li.rrssb-instagram a .rrssb-icon:hover .rrssb-icon svg polygon {
   fill: #2f4a60;
 }
+#page-home {
+  margin-top: 40px;
+}
+#page-home .lead {
+  line-height: 1.5em;
+}
 #page-home .item {
   padding: 10px 0;
   border-bottom: 1px dashed #eeeeee;
+  font-size: 1.1em;
 }
 #page-post .section-content {
   margin-bottom: 40px;

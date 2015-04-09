@@ -5,23 +5,39 @@
   border-top: 0 none;
   border-bottom: 1px solid @gray-lighter;
 
-  .title{
-//    text-transform: uppercase;
-    font-size: 1.75em;
+  .navbar-brand.title{
+    font-size: 2em;
     font-weight: 700;
-    line-height: 3em;
-    a {
+    line-height: 90px;
+    text-transform: uppercase;
+    .primary {
+      color: @brand-primary;
+    }
+    .secondary {
+      font-weight: 300;
       color: @gray-dark;
-      text-decoration: none;
+    }
+    &:hover {
+      color: @brand-primary;
     }
   }
-  .navbar-brand {
-    background-color: @brand-primary;
-    display: none;
-    height: 100px;
-    .logo {
-      margin-top: 18px;
+  .tagline {
+    line-height: 120px;
+    margin-left: 20px;
+    font-weight: 300;
+    color: @gray-light;
+  }
+  .nav-main {
+    li {
+      a {
+        font-size: 1.1em;
+        font-weight: 700;
+        line-height: 90px;
+        color: @gray-dark;
+        &:hover {
+          color: @brand-primary;
+        }
+      }
     }
-
   }
 }

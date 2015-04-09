@@ -3,7 +3,7 @@ permalink:        /post/:title
 relative_permalinks: true
 
 # Setup
-title:            Laravel Indonesia
+title:            ID Laravel
 tagline:          Tutorial Laravel Bahasa Indonesia
 url:              http://id-laravel.com
 paginate:         1

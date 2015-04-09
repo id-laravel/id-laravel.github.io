@@ -32,13 +32,27 @@
 {% include facebook.html %}
 
 <nav class="navbar navbar-default" id="navbar-header">
-    <div class="container text-center">
-        <a class="navbar-brand" href="{{ site.baseurl }}">
-            <img src="{{ site.baseurl }}public/img/site-avatar.png" alt="logo Laravel Indonesia" width="50px" class="logo">
-        </a>
-        <h1 class="title">
-            <a href="{{ site.baseurl }}">{{ site.title }}</a>
-        </h1>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="navbar-header">
+                <img src="{{ site.baseurl }}public/img/site-avatar.png" alt="logo Laravel Indonesia" width="50px" class="logo hide">
+                <a class="navbar-brand title" href="{{ site.baseurl }}"><span class="primary">ID</span><span class="secondary">Laravel</span></a>
+            </div>
+            <p class="navbar-header tagline hidden-xs">
+                Belajar Laravel Ala Indonesia
+            </p>
+
+            <ul class="nav navbar-nav navbar-right nav-main hidden-xs hidden-sm">
+                <li><a href="/download">Download</a></li>
+                <!--<li><a href="http://idlaravel-auth.dev">Diskusi</a></li>-->
+                <!--<li><a href="http://idlaravel-auth.dev">Lowongan</a></li>-->
+                <!--<li><a href="/submit">Submit <del>Artikel</del> Apapun</a></li>-->
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+            </ul>
+        </div>
     </div>
 </nav>
 
