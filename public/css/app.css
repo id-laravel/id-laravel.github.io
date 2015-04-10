@@ -4067,9 +4067,11 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-color: transparent;
   border-top: 0 none;
   border-bottom: 1px solid #eeeeee;
+  font-family: "Open Sans";
+  font-size: 1.1em;
 }
 #navbar-header .navbar-brand.title {
-  font-size: 2em;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 90px;
   text-transform: uppercase;
@@ -4091,7 +4093,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #777777;
 }
 #navbar-header .nav-main li a {
-  font-size: 1.1em;
   font-weight: 700;
   line-height: 90px;
   color: #333333;
