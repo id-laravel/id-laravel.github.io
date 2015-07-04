@@ -84,6 +84,6 @@ Nah, sepertinya saya sudah memaparkan beberapa direktori penting yang harus dipe
 
 ## Dimanakah saya harus meletakkan class Model di laravel 5?
 
-Salah satu yang membuat saya bingung pada saat menggunakan laravel 5 adalah bahwa tidak adanya direktori bernama "Models" seperti framework-framework PHP MVC lainnya. Lalu, dimanakah seharusnya kita meletakkan class Models yang sudah dibuat? Apakah kita harus membuat sendiri folder bernama models di `app/Http`? Sebetulnya tidak ada konvensi khusus dimana letak class model berada, akan tetapi jika melihat default model user (User.php) yang disediakan oleh laravel, maka kita dapat meletakkan class Model yang dibuat langsung di dalam folder `app/Http` seperti misalnya `app/Http/Product.php`.
+Salah satu yang membuat saya bingung pada saat menggunakan laravel 5 adalah bahwa tidak adanya direktori bernama "Models" seperti framework-framework PHP MVC lainnya. Lalu, dimanakah seharusnya kita meletakkan class Models yang sudah dibuat? Apakah kita harus membuat sendiri folder bernama "Models" di `app/Http`? Sebetulnya tidak ada konvensi khusus dimana letak class model berada, akan tetapi jika melihat default model user `User.php` yang disediakan oleh laravel serta lokasi generated model yang dibuat oleh laravel pada saat kita menggunakan perintah `php artisan make:model` maka dapat disimpulkan bahwa lokasi class Model pada laravel 5 adalah di dalam folder `app` seperti misalnya `app\Product.php`
 
-Oke, seperti sampai disini dulu yang bisa saya sampaikan. semoga bermanfaat untuk rekan-rekan semua. 
+Oke, sepertinya sampai disini dulu yang bisa saya sampaikan. semoga bermanfaat untuk rekan-rekan semua. 
