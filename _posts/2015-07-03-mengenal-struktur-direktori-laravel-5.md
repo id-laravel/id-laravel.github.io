@@ -54,7 +54,7 @@ Direktori ini merupakan direktori yang dibuat secara khusus untuk menyimpan selu
 
 * app/Http/Controllers: direktori ini digunakan untuk menyimpan seluruh class Controller yang kita buat seperti misalnya ProductController.php, SalesController.php, dll.
 * app/Http/Middleware: direktori ini digunakan untuk menyimpan seluruh class yang berhubungan dengna middleware PHP. secara umum middleware adalah sebuah class yang akan dieksekusi sebelum request yang masuk diberikan kepada Controller. Tujuan dari class Middleware adalah untuk melakukan filter seperti misalnya menolak akses dari user yang belum login. untuk penjelasan lengkapnya tentang middleware bisa baca dokumentasinya [disini](http://laravel.com/docs/5.1/middleware).
-* app/Http/Requests: direktori ini hanya berisikan sebuah class yaitu Request.php yang dapat digunakan untuk mendapatkan data dari form request yang dikirim oleh web browser. Selama saya menggunakan laravel-5 direktori ini tidak pernah saya sentuh sama sekali karena sepertinya memang tidak perlu.
+* app/Http/Requests: direktori ini hanya berisikan sebuah class yaitu Request.php yang dapat digunakan untuk mendapatkan data dari form request yang dikirim oleh web browser. Selain itu direktori ini juga ditujukan untuk menyimpan class validator yang kita buat baik yang dibuat secara manual ataupun dengan menggunakan perintah `php artisan make:request`. Untuk penjelasan lebih lanjut terkait penggunaan validator pada laravel, bisa dibaca dokumentasinya [disini](http://laravel.com/docs/5.1/validation)
 
 ## database/migrations
 
@@ -86,4 +86,4 @@ Nah, sepertinya saya sudah memaparkan beberapa direktori penting yang harus dipe
 
 Salah satu yang membuat saya bingung pada saat menggunakan laravel 5 adalah bahwa tidak adanya direktori bernama "Models" seperti framework-framework PHP MVC lainnya. Lalu, dimanakah seharusnya kita meletakkan class Models yang sudah dibuat? Apakah kita harus membuat sendiri folder bernama "Models" di `app/Http`? Sebetulnya tidak ada konvensi khusus dimana letak class model berada, akan tetapi jika melihat default model user `User.php` yang disediakan oleh laravel serta lokasi generated model yang dibuat oleh laravel pada saat kita menggunakan perintah `php artisan make:model` maka dapat disimpulkan bahwa lokasi class Model pada laravel 5 adalah di dalam folder `app` seperti misalnya `app\Product.php`
 
-Oke, sepertinya sampai disini dulu yang bisa saya sampaikan. semoga bermanfaat untuk rekan-rekan semua. 
+Oke, sepertinya sampai disini dulu yang bisa saya sampaikan. semoga bermanfaat untuk rekan-rekan semua.
