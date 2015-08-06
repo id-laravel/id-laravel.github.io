@@ -4100,32 +4100,32 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 #navbar-header .nav-main li a:hover {
   color: #f0523f;
 }
-footer {
+#footer {
   border-top: 1px solid #eeeeee;
   background-color: #fbfbfb;
   padding: 40px 0;
   margin-top: 80px;
   color: #777777;
 }
-footer .title {
+#footer .title {
   font-weight: 700;
   margin-bottom: 5px;
 }
-footer hr {
+#footer hr {
   border-color: #eeeeee;
 }
-footer .social-link a {
+#footer .social-link a {
   color: #777777;
   padding: 0 5px;
 }
-footer .social-link a:hover {
+#footer .social-link a:hover {
   color: #f0523f;
 }
 @media (max-width: 991px) {
-  footer {
+  #footer {
     text-align: center;
   }
-  footer .column {
+  #footer .column {
     margin-bottom: 20px;
   }
 }
@@ -4630,7 +4630,9 @@ a:hover,
 a:focus {
   text-decoration: none;
 }
-p {
+p,
+ol,
+ul {
   line-height: 24.75px;
 }
 p > code {
