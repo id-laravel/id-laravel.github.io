@@ -4,6 +4,8 @@ title: "Autentikasi Default Laravel 5"
 tags: [autentikasi, login, logout, registrasi, reset password]
 ---
 
+> Artikel ini untuk Laravel 5.0, jika Anda memakai Laravel 5.1 silakan baca [Autentikasi Default Laravel 5.1](/post/autentikasi-default-laravel-5-1/).
+
 Satu hal yang hampir pasti kita jumpai ketika membuat sebuah website adalah proses autentikasi yang meliputi login, logout, registrasi, dan reset password. Fungsi-fungsi standard seperti itu biasanya cukup *straightforward* (tidak ribet) dan mudah diimplementasi. Tetapi harus membuat fungsi tersebut berulang-ulang setiap kali memulai suatu proyek jelas bukan pilihan yang bagus.
 
 Programmer yang berpengalaman biasanya sudah mempunyai senjata berupa template aplikasi (*base application*) dengan fungsi-fungsi standard di dalamnya yang bisa digunakan kembali (*reuse*). Nah, bagi Anda yang belum memilikinya bisa memanfaatkan proses autentikasi bawaan Laravel yang memang sudah disediakan secara default. Kita tinggal memakai dan atau memodifikasinya sesuai keperluan. 
