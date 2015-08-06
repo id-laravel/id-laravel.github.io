@@ -4626,6 +4626,9 @@ p > code {
 #page-post .related-post .title {
   font-weight: 400;
 }
+#page-post .related-post .subtitle {
+  margin-bottom: 20px;
+}
 a:hover,
 a:focus {
   text-decoration: none;
