@@ -4,6 +4,7 @@ title: Kolom Password Dalam Autentikasi, Bisakah Diganti?
 tags: [autentikasi]
 ---
 
+> Artikel ini untuk Laravel 5.0, jika Anda memakai Laravel 5.1 silakan baca tutorial [Memodifikasi Default Login Laravel 5.1](http://id-laravel.com/post/memodifikasi-default-login-laravel-5-1/).
 
 Secara *default*, Laravel 5 sudah menyediakan [*boilerplate* autentikasi](/post/autentikasi-default-laravel-5/) yang bisa langsung dipakai. Namun, Laravel berasumsi bahwa tabel yang digunakan untuk autentikasi adalah tabel `users` yang didalamnya terdapat dua buah kolom: `email` dan `password`. Dua field inilah yang dijadikan inputan ketika login ataupun registrasi.
 
