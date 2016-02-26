@@ -62,7 +62,7 @@ Direktori ini berisikan file-file migrations yang digenerate oleh laravel pada s
 
 ## database/seeds
 
-Direktori ini berisikan file-file dabase seeds yang digenerate oleh laravel pada saat kita menjalankan perintah `php artisan make:seeder`. fitur seeding di laravel sendiri sangat berguna apabila kita ingin melakukan inisialisasi data (data awalan) pada table yang kita buat. untuk penjelasan lebih lanjut terkait fitur seeding pada laravel silahkan baca dokumentasinya [disin](http://laravel.com/docs/5.1/seeding).
+Direktori ini berisikan file-file dabase seeds yang digenerate oleh laravel pada saat kita menjalankan perintah `php artisan make:seeder`. fitur seeding di laravel sendiri sangat berguna apabila kita ingin melakukan inisialisasi data (data awalan) pada table yang kita buat. untuk penjelasan lebih lanjut terkait fitur seeding pada laravel silahkan baca dokumentasinya [disini](http://laravel.com/docs/5.1/seeding).
 
 ## public
 
