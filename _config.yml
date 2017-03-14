@@ -1,6 +1,5 @@
 # Permalinks
 permalink:        /post/:title
-relative_permalinks: true
 
 # Setup
 title:            ID Laravel
