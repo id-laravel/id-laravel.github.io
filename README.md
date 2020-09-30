@@ -87,7 +87,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
 }
-@media (min-width: 38em) {\\ !em = 16px
+@media (min-width: 38em) {/* 1em = 16px */
   html {
     font-size: 20px;
   }
