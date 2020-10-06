@@ -2,12 +2,12 @@ Uh oh! Seems like joe doesn't know what phpstorm is.
 Try running `joe ls` to see list of available gitignore files.
 #### joe made this: https://goel.io/joe
 
-#####=== Jekyll ===#####
+#####=== JEKYLL ===#####
 
 _site/
 .sass-cache/
 
-#####=== Laravel ===#####
+#####=== LARAVEL ===#####
 
 /bootstrap/compiled.php
 .env.*.php
